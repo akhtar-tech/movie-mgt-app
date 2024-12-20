@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Merriweather", sans-serif;
+}
+
+body {
+  @apply bg-[#f6f6f6];
+}
+
+.dark body {
+  @apply bg-[#222222] text-white transition-all delay-300;
+}
+
+.dark .movies-wrapper-title{
+  @apply text-[#f6f6f6] hover:text-gray-300 transition-all delay-300;
+}
+
+.movies-wrapper-title {
+  @apply  text-gray-800 hover:text-gray-700
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.movie-details-content-container {
+  background: rgba( 0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(3, 3, 12, 0.75);
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
+}
+
+.movie-details-content-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  /* border-radius: 15px; Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  overflow: hidden; /* Ensures the child elements adhere to the border-radius */
+}
+
+.movie-info h1 {
+  color: transparent; /* A gold-like color for titles */
+  -webkit-text-stroke: 1px #ffffff;
+
+  margin-bottom: 10px; /* Spacing after the title */
+}
+
+.movie-info p, .movie-info div {
+ 
+  line-height: 1.5; /* Improved line spacing for readability */
+}
+
+/* .tagline {
+ */
+/* } */
+
+.movie-info .overview {
+  /* color: #bebebe; */
+  text-align: left;
+  line-height: 1.5; /* Italicize the overview for emphasis */
+}
+
+.movie-info .rating {
+  font-weight: bold; /* Make rating stand out */
+  color: #E3BA22; /* A green-like color for ratings */
+}
+
+.genres span {
+  /* color: #; */
+  border-radius: 18px;
+  margin: 4px;
+  padding: 6px 8px;
+  font-size: .7rem;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(205, 206, 209, 0.17);
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+}
+
+
+
+/* Additional hover effects for interactive elements (if any) */
+.movie-info a {
+  color: #FF5722; /* A bright color for links */
+  text-decoration: none; /* No underline */
+}
+
+.movie-info a:hover {
+  text-decoration: underline; /* Underline on hover for links */
+}
+
+.active {
+  transition: .3s ease-in-out;
+  border-bottom: 2px solid cyan;
+}
+
+
+/* body */
+body::-webkit-scrollbar {
+  width: 8px;
+  height:100vh;
+}
+body::-webkit-scrollbar-button {
+  width: 32px;
+  height: 100vh;
+}
+body::-webkit-scrollbar-thumb {
+  background: #2b2b2bab;
+  border: 1px solid #ffffff;
+  border-radius: 31px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2bab;
+}
+body::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+body::-webkit-scrollbar-track {
+  background: #cacaca;
+  border: 1px solid #ffffff;
+  border-radius: 82px;
+}
+body::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+body::-webkit-scrollbar-track:active {
+  background: #666666;
+}
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
